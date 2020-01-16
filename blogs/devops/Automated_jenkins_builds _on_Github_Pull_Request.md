@@ -1,8 +1,33 @@
+---
 
-## Automated jenkins builds for a Node.js application on Github Pull Request
+layout: post
+
+title: Automated jenkins builds for a Node.js application on Github Pull Request
+
+category: DevOps
+
+comments: true
+
+description: 
+
+tags:
+
+    - Jenkins
+
+    - Github
+
+    - Pull Request
+
+    - DevOps
+    - Node.js
+    - CI/CD
+   
+    
+   
+
+---
 <img src="https://scontent.ftun12-1.fna.fbcdn.net/v/t1.15752-9/68398252_450290222479996_8804154740247101440_n.png?_nc_cat=102&_nc_ohc=s5IooMx5Hk8AX8gm2KX&_nc_ht=scontent.ftun12-1.fna&oh=e9c3be0768761847bc9231a496e56d71&oe=5EA91543" align="center" height="400" width="800" max-width="100%">
-
-## Intoduction <br>
+# Intoduction
 In this tutorial we will look forward how to how to trigger Jenkins build on new Pull Requests for a simple **Node.js** application based on pull request Github event. <br>
 Before jumping into  details about this tuorial let's give a hit about some basics that we should know first of all:
 - **Github Flow**
@@ -11,8 +36,8 @@ Before jumping into  details about this tuorial let's give a hit about some basi
 
 ## Github Flow
 <br>
-<img src="https://cdn-images-1.medium.com/max/1600/1*iHPPa72N11sBI_JSDEGxEA.png" max-width="100%" align="center" height="300" width="800"> <br>
-GitHub flow is a lightweight, branch-based workflow that supports teams and projects where deployments are made regularly. I will try to explain it in a very simple way step by step : 
+<img src="https://cdn-images-1.medium.com/max/1600/1*iHPPa72N11sBI_JSDEGxEA.png" max-width="100%" align="center" height="300" width="800">
+**GitHub flow** is a lightweight, branch-based workflow that supports teams and projects where deployments are made regularly. I will try to explain it in a very simple way step by step : 
 
  **1. Create your feature _Branch_ :** <br>
  When you're working on a **project**, you're going to have a bunch of different features or ideas in progress at any given time. Branching exists to help you manage this workflow and that's why you should create a specific branch for every feature you are working on! <br>
@@ -42,7 +67,7 @@ In this demo such tools are required :
 
 # Demo
 <br>
-1-Install jenkins and configure Github pull request plugin
+## **1 - Install jenkins and configure Github pull request plugin**
 <br>
 Since we will need  **Jenkins** you have to install it. You can check here and follow steps based on your OS [Go Here..](https://jenkins.io/doc/book/installing/){:target="_blank"}. <br> 
 Once you finished with the setup by adding your user credentials you should then be redirected to  **Jenkins** dashboard as it's shown in this picture ! <br> 
@@ -66,7 +91,7 @@ Now you have to set up Jenkins server to authenticate GitHub : <br>
 
 
 
-2 - Create Github repository
+## **2 - Create Github repository**
 <br>
 For this example we will need 4 files in this repo : 
 - **app.js**
@@ -89,7 +114,7 @@ For this example we will need 4 files in this repo :
 Your repo should look finally like this : 
 
   <img src="https://scontent.ftun12-1.fna.fbcdn.net/v/t1.15752-9/68381057_2591726864204638_4896165560984797184_n.png?_nc_cat=103&_nc_ohc=IrDm036ezHcAX9tHZSG&_nc_ht=scontent.ftun12-1.fna&oh=c85a683c438e24ee3eb8ae39e6a97c10&oe=5EA51DF5" align="center" height="200" width="800" max-width="100%"> <br> 
-  if you want to practice this process, here is the github [repo..](https://github.com/majdas007/Blog-Post)
+  if you want to practice this process, here is the github [repo..](https://github.com/majdas007/Blog-Post){:target="_blank"}
 
 ## **3 - Configure your pipeline job in Jenkins**
 <br>
