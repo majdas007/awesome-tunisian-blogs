@@ -1,35 +1,10 @@
----
-
-layout: post
-
-title: Automated jenkins builds for a Node.js application on Github Pull Request
-
-category: DevOps
-
-comments: true
-
-description: 
-
-tags:
-
-    - Jenkins
-
-    - Github
-
-    - Pull Request
-
-    - DevOps
-    - Node.js
-    - CI/CD
-   
-    
-   
-
----
+# Automated jenkins builds for a Node.js application on Github Pull Request
 <img src="https://scontent.ftun12-1.fna.fbcdn.net/v/t1.15752-9/68398252_450290222479996_8804154740247101440_n.png?_nc_cat=102&_nc_ohc=s5IooMx5Hk8AX8gm2KX&_nc_ht=scontent.ftun12-1.fna&oh=e9c3be0768761847bc9231a496e56d71&oe=5EA91543" align="center" height="400" width="800" max-width="100%">
-# Intoduction
+## Intoduction 
+<br>
 In this tutorial we will look forward how to how to trigger Jenkins build on new Pull Requests for a simple **Node.js** application based on pull request Github event. <br>
 Before jumping into  details about this tuorial let's give a hit about some basics that we should know first of all:
+<br>
 - **Github Flow**
 - **Jenkins**
 <br> <br>
